@@ -1,0 +1,168 @@
+// @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+// body {
+//   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+//     Ubuntu, "Helvetica Neue", sans-serif;
+//     background:black
+// }
+
+// .header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   padding: 50px 4vw;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+
+//   color: white;
+//   font-family: "Raleway";
+//   font-weight: 600;
+//   mix-blend-mode: difference;
+
+//   ul {
+//     display: flex;
+
+//     li {
+//       margin: 0 15px;
+//     }
+//   }
+// }
+// .top-banner {
+//   width: 100vw;
+//   height: 100vh;
+//   background: black;
+//   display: flex;
+//   align-items: center;
+
+//   position: fixed;
+//   z-index: -1;
+//   top: 0;
+//   padding: 0 4vw;
+
+//   color: white;
+//   font-family: "Raleway";
+
+//   .top-banner-content {
+//     font-size: 1.8rem;
+//     line-height: 1.3;
+
+//     span {
+//       font-style: italic;
+//       font-weight: 600;
+//       transition: all 0.4s ease-in-out;
+
+//       &:hover {
+//         cursor: pointer;
+//         letter-spacing: 10px;
+//         font-weight: 900;
+
+//         ~ .resp-iframe {
+//           opacity: 1;
+//         }
+//       }
+//     }
+//   }
+
+//   .top-banner-scrolldown {
+//     font-size: 4rem;
+//     position: absolute;
+//     bottom: 10%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
+
+// .resp-iframe {
+//   box-sizing: border-box;
+//   height: 56.25vw;
+//   left: 50%;
+//   min-height: 100%;
+//   min-width: 100%;
+//   transform: translate(-50%, -50%) scale(1.1);
+//   position: absolute;
+//   top: 50%;
+//   width: 177.7777778vh;
+//   pointer-events: none;
+
+//   z-index: -1;
+//   background: black;
+//   opacity: 0;
+//   transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+//   filter: grayscale(1) blur(4px);
+// }
+
+// .menu-list {
+//   margin-top: 100vh;
+//   background-color: #000000;
+//   position: relative;
+//   padding: 1vh 0;
+
+//   .menu-item {
+//     position: relative;
+//   }
+
+//   .menu-title {
+//     font-size: 4rem;
+//     text-transform: uppercase;
+//     font-family: "Fugaz One", cursive;
+//     padding: 8vh 4vw;
+//     z-index: 1;
+//     justify-content:center;
+
+//     &.clone {
+//       position: absolute;
+//       top: 0;
+//       pointer-events: none;
+//       color: white;
+//       clip-path: inset(0 100% 0 0);
+//       transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+//     }
+
+//     &:not(.clone) {
+//       margin: 10vh 0;
+//       -webkit-text-stroke-width: 3px;
+//       -webkit-text-stroke-color: white;
+//       color: transparent;
+
+//       &:hover {
+//         cursor: pointer;
+
+//         ~ .clone {
+//           clip-path: inset(0 0 0 0);
+//         }
+//         ~.menu-image-container .menu-image {
+//           opacity: 1;
+//           transform: scale(1.1);
+//           filter: blur(0) brightness(1);
+//         }
+//       }
+//     }
+//   }
+
+//   .menu-image-container {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     overflow: hidden;
+//     pointer-events: none;
+//   }
+
+//   .menu-image {
+//     opacity: 0;
+//     background-size: cover;
+//     background-position: center;
+//     filter: blur(1px) brightness(3);
+//     transform: scale(1);
+
+//     width: 100%;
+//     height: 100%;
+
+//     transition: all 1s cubic-bezier(0.77, 0, 0.175, 1);
+//   }
+// }
