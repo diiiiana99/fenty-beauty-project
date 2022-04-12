@@ -1,5 +1,5 @@
 import React from 'react';
-import './About.scss'
+import './MakeupSection.scss'
 
 function Title ({title, setActiveIndex, index}) {
     return(
@@ -9,11 +9,12 @@ onMouseLeave={() => setActiveIndex(-1)}
 
 >
     
-    <div className='titles-list'>
-    <h3 className='title'>
-        <span>{title}</span>
+    <div className='text-list'>
+    <h3 className='about-title'>
+        <span className='title'>{title}</span>
     </h3>
     </div>
+
 </div>
     )
 };

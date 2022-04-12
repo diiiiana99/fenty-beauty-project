@@ -1,0 +1,120 @@
+
+
+    .head{
+        color: white;
+        margin-left: 200px;
+        margin-top: 250px;
+    }
+    .about-img-container{
+    position: fixed;
+    }
+
+.about-wrapper {
+    min-height: 100vh;
+    width: 100%; 
+    // background: url(https://www.mefeater.com/wp-content/uploads/2018/03/Shudu-model-770x537.jpg);
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5396f996e4b04b71be1c30d9/1551015092048-RRP99EZYOP2S3F6FZMSO/ezgif-1-2ae61b2df344.gif?format=2500w");
+
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 10px;
+}
+.bottom-text {
+color: white;
+margin-bottom: 20px;
+}
+.texting{
+    color: white;
+    margin-bottom: 60vh;
+   
+}
+ .about-list {
+   mix-blend-mode: difference;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: 1px;
+    justify-content: space-around;
+    
+    &:hover{
+     .title{
+            opacity: 10;
+      }
+   }
+   .text-list {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &:hover{
+        .title{
+            opacity: 20;
+        }
+    }
+
+    &:last-of-type{
+        margin-right: 0px;
+    }
+}
+    .title{
+        transition: opacity 0.35s cubic-bezier(.77, 0, 0.175, 1);
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        z-index: 2;
+
+    }
+ }
+ .left-letter{
+     color: white;
+     margin-bottom: 60vh;
+     padding: 2rem;
+ }
+ .right-let{
+     color: white;
+ }
+
+  
+
+    
+
+.image-list{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    img{
+        opacity: 0;
+        position: absolute;
+        width: auto;
+        height: auto;
+        max-height: 50%;
+        min-height: 60%;
+        object-fit: contain;
+        pointer-events: none;
+
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        
+
+        &.is-active{
+            opacity: 0.85;
+        }
+
+
+    }
+}

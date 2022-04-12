@@ -1,0 +1,21 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 50px 4vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  font-family: "Raleway";
+  font-weight: 600;
+  mix-blend-mode: difference;
+
+}
+//positon:fixed;
+// top: 50%;
+// right: -48px;
+// transform: rotate(-90deg);

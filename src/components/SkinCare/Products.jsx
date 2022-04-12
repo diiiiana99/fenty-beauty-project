@@ -5,13 +5,13 @@ import {Link} from 'react-router-dom'
 
 function Products({url, description, index}) {
   return (
-    <div className='grid-item'>
+    <div className='skincare-items'>
        <Link to='/prod'>
 
         <img className='grid-item-media' src={url} alt=''/>
        
         </Link>
-        <p>{description}</p>
+        <p className='product-description'>{description}</p>
 
       
     </div>

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 import "./style.scss";
-// import CustomCursorContext from "./context/CustomCursorContext";
+import CustomCursorContext from "./context/CustomCursorContext";
 
-// TODO: Hide if cursor not moved
 const CustomCursor = () => {
-  // const { type } = useContext(CustomCursorContext);
+  const { type } = useContext(CustomCursorContext);
   const secondaryCursor = React.useRef(null);
+  const mainCursor = React.useRef(null);
   const positionRef = React.useRef({
     mouseX: 0,
     mouseY: 0,
@@ -22,14 +22,14 @@ const CustomCursor = () => {
 
       const mouseX = clientX;
       const mouseY = clientY;
-      // if (secondaryCursor.current === null) {
-      //   debugger
-      // }
+
       positionRef.current.mouseX =
         mouseX - secondaryCursor.current.clientWidth / 2;
-        
       positionRef.current.mouseY =
         mouseY - secondaryCursor.current.clientHeight / 2;
+      mainCursor.current.style.transform = `translate3d(${mouseX -
+        mainCursor.current.clientWidth / 2}px, ${mouseY -
+        mainCursor.current.clientHeight / 2}px, 0)`;
     });
 
     return () => {};
@@ -64,14 +64,19 @@ const CustomCursor = () => {
           positionRef.current.destinationY += distanceY;
         }
       }
-      if (secondaryCursor && secondaryCursor.current)
-        secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
+      secondaryCursor.current.style.transform = `translate3d(${destinationX}px, ${destinationY}px, 0)`;
     };
     followMouse();
   }, []);
   return (
-    <div className={`cursor-wrapper default`}>
-      <div className="secondary-cursor" ref={secondaryCursor}></div>
+    <div className={`cursor-wrapper ${type}`}>
+      <div className="main-cursor " ref={mainCursor}>
+        <div className="main-cursor-background"></div>
+      </div>
+      <div className="secondary-cursor" ref={secondaryCursor}>
+        <div className="cursor-background"></div>
+      </div>
+      ;
     </div>
   );
 };

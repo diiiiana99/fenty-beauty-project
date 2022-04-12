@@ -6,6 +6,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/src/locomotive-scroll.scss";
 import imagesLoaded from "imagesloaded";
 import Fade from 'react-reveal/Fade'
+import Main from '../Services/Main';
 
 
 
@@ -85,17 +86,19 @@ const Hero = () => {
   
   return (
     <>
+   <div className='body'>
    
       <div
-        className="main-container"
-        id="main-container"
+        className="hero-container "
+        id="hero-container"
         data-scroll-container
         ref={ref}
+        
       >
-           <Fade left>
-        <div className="grid-wrap">
+           <Fade right>
+        <div className="skincare-wrap">
        
-          <div className="left-column" ref={leftColumnRef}>
+          <div className="left-row" ref={leftColumnRef}>
             {leftChunk.map(({ url, description }, index) => (
               <Products
                 key={url}
@@ -105,7 +108,7 @@ const Hero = () => {
               />
             ))}
           </div>
-          <div className="middle-column" data-scroll data-scroll-speed="-20">
+          <div className="middle-row" data-scroll data-scroll-speed="-20">
             <div ref={middleColumnRef}>
               {middleChunk.map(({ url, description }, index) => (
                 <Products
@@ -117,7 +120,7 @@ const Hero = () => {
               ))}
             </div>
           </div>
-          <div className="right-column" ref={rightColumnRef}>
+          <div className="right-row" ref={rightColumnRef}>
             {rightChunk.map(({ url, description }, index) => (
               <Products
                 key={url}
@@ -131,11 +134,14 @@ const Hero = () => {
         <div>
           
         </div>
+         
 
         </div>
         </Fade>
+=
       </div>
 
+      </div>
     </>
   );
 };

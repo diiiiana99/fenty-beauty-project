@@ -3,22 +3,22 @@
 const data = [
     {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB30020_FB0150_alt1_200x.jpg?v=1633730694",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_FALL2021_0168_03_1200X1500_72DPI_7e5048e4-f2a1-4a19-a3f2-548043c01e44.jpg?v=1631293650",
       title: "LIQUID FOUNDATION",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },
     {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2PRODUCT_CONCRETE_LIQUID_KILLAWATT_OPEN_HUSTLABABY_1200x1500_043cd442-9c12-4a7a-b513-4d6764f8c66e_650x.jpg?v=1647985893",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/2021_06_FENTY_POSTHOL_1356_02_1200X1500_72DPI_c26d5e6b-1b0c-48ce-a747-3fe8f03cc82f.jpg?v=1647985851",
       title: "SHINY HIGHLIGHTER",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },
     {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_METALLIC_COCONUDE_FENTY_ICON_FILL_IN_MVP_1200x1500_ec3e3cbf-e1a7-459e-89ed-83d8fe5a0827.jpg?v=1641951583",
-      title: "MATTE LIPSTICKS",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB50008_alt2_7fe6954f-8a49-4171-af5a-70fe51e88801.jpg?v=1632785231",
+      title: "GlOSSY LIPS",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },
@@ -31,15 +31,15 @@ const data = [
     },
     {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOL2021_II_T2PRODUCT_CONCRETE_GLOSSY_POSSE_OPEN_1200x1500_c798562d-62e8-406f-a9d7-6096628047af_200x.jpg?v=1629151297",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_snap_d0463077-45dd-42ca-9af5-831f3335a4e2.jpg?v=1623342533",
       title: " BOMB COLLECTION",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },
     {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_HOLIDAY_I_2021_T2PRODUCT_0576_02_1200X1500_72DPI.jpg?v=1629149256",
+      title: "EYESHADOW COLLECTION",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },
@@ -55,82 +55,8 @@ const data = [
       title: "HIGHLIGHTER PALETTE",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },
-    {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },  {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    }, 
-     {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },
-    {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    }, {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    }, {
-      url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
-      description:
-        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
-    },
+    },  
+      
   ];
   
   export default data;

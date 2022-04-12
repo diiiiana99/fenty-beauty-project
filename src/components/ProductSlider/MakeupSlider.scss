@@ -1,0 +1,65 @@
+.products-container{
+  overflow:hidden;
+  background: black;
+  
+}
+.header-pr{
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1.5px;
+}
+
+.family {
+  margin-top: 80px;
+  display: flex;
+  margin: 100px 0;
+  margin-left: 60px;
+  background: black;
+
+  transform: translate3d(0, 0, 0);
+  &:hover {
+    cursor: pointer;
+  }
+  .family-item {
+    min-width: 30vw;
+    margin-left: 3.33333vw;
+    justify-content:center;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+.desc{
+  color: white;
+}
+.product-desc{
+  color: white;
+  margin-left: 2.33333vw;
+  display:flex;
+  font-size: .8rem;
+
+
+}
+  .family-item-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 40%;
+    width: 30%;
+
+    &.family-item-image:hover{
+    
+        background-image: url(https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_METALLIC_COCONUDE_FENTY_ICON_BASE_FILL_OPEN_MVP_1200x1500_09ba2355-3c4e-4653-89fc-400e9acb3a23.jpg?v=1642134623);
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding-top: 100%;
+      pointer-events: none;
+    }
+  }
+}
