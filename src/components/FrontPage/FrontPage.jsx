@@ -48,10 +48,9 @@ function FrontPage  () {
           <h1 className='text'>FENTY BEAUTY BY </h1> 
           {/* </Fade>
           <Fade bottom> */}
-           <span className='front-page-span'>RIHANNA</span>
+           <span className='front-page-span'>RIHANNA yooo</span>
            {/* </Fade> */}
            <div>
-
            </div>
           <iframe
             title={"src"}
