@@ -1,23 +1,13 @@
-import React, { useEffect } from "react";
-import "./ModelsCarousel.scss";
+import React, { useEffect, useState } from "react";
+import "./MakeupSlider.scss";
 import Fade from 'react-reveal/Fade'
+import {ScrollTrigger} from "gsap/ScrollTrigger";
+import gsap from "gsap";
 import {Link} from 'react-router-dom'
-import { useHistory } from "react-router-dom";
 
 
 
 
-const unsplashUrls = [
-
-
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2BEAUTY_LIQUID_KILLAWATT_HONEY_HAWTIE_AJONG_DEEP_025_1200x1500_72DPI.jpg?v=1647985851",
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2BEAUTY_LIQUID_KILLAWATT_HONEY_HAWTIE_FATUMA_MEDIUM_DEEP_230.jpg?v=1647985851",
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_POSTHOL2021_T2BEAUTY_LIQUID_KILLAWATT_HONEY_HAWTIE_ELISEO_MEDIUM_003.jpg?v=1647985851",
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB2022_APRIL_SUNSTALKRPALETTE_MEDIUM_129_1.jpg?v=1648163716",
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB2022_APRIL_SUNSTALKRPALETTE_MEDIUMDEEP_040_1.jpg?v=1648233884",
-  "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB2022_APRIL_SUNSTALKRPALETTE_LIGHT_179_1.jpg?v=1648163718",
-
-];
 
 const clamp = (value, lower, upper) => {
   if (value > upper) return upper;
@@ -25,8 +15,33 @@ const clamp = (value, lower, upper) => {
   return value;
 };
 
-export default function ModelsCarousel ()  {
+export default function MakeupSlider4 ()  {
 
+
+  
+  const[loader, setLoader] = useState(true);
+  const [products, setProducts] = useState([])
+
+
+  useEffect( () => {
+    fetch("http://localhost:3000/products")
+    .then(r => {
+      if (r.ok) {
+        r.json().then(data => {
+          setProducts(data.filter(product => product.category === "FOR HER EYES"))
+        //   console.log(data.filter(product => product.category === "FOR HER FACE"))
+        })
+        
+      }
+    })
+  }, [] )
+
+
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+  }, []);
+// console.log(products)
   const slider = React.useRef();
   const otherRef = React.useRef({
     hasMousePress: false,
@@ -82,10 +97,12 @@ export default function ModelsCarousel ()  {
     slider.current.style.transform = `translate3d(${clampedDistance}px, 0px, 0px)`;
     otherRef.current.velocity *= 0.9;
 
-    if (Math.abs(otherRef.current.velocity) > 0.1) {
+    if (Math.abs(otherRef.current.velocity) > 0.4) {
       otherRef.current.requestAnimationId = requestAnimationFrame(momentumLoop);
     }
   };
+
+
 
   useEffect(() => {
     const sliderCopy = slider.current;
@@ -102,43 +119,40 @@ export default function ModelsCarousel ()  {
     };
   }, []);
 
-  const history = useHistory();
-
-	const routeChange = () =>{ 
-	  let path = `/singleproduct5`; 
-	  history.push(path);
-	}
-
   return (
     <>
-   <div className='models-container'>
+   <div className='products-container'>
+ 
   
-    <p className='header-pr'>DISCOVER YOUR FAVORITE LOOK</p>
-
+   
     <div className="family" ref={slider}>
-      {unsplashUrls.map((url) => (
-        <Fade bottom>
+   
+      {products.map((product) => (
+        <Fade left>
         <div className="family-item">
-          <Link to= '/singleproduct5'>
+        <Link to={`/singleproduct/${product.id}`} >
+
           <div
             className="family-item-image"
-            style={{ backgroundImage: `url(${url})` }}
+            style={{ backgroundImage: `url(${product?.images[0]?.url})` }}
     
           ></div>
           </Link>
           <div className='desc'>
-          <p className='product-desc'>
+          <p className='product-desc'>{product.title}
       </p>
-      <button onClick={routeChange}>DETAILS</button>
-          </div>
-     
+          <p> ${product.price} </p>
 
+          </div>
         </div>
         </Fade>
       ))}
    
     </div>
+    
+
     </div>
+   
     </>
     
   );

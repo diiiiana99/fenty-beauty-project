@@ -87,7 +87,7 @@ const Hero = () => {
   return (
     <>
    <div className='body'>
-   
+      
       <div
         className="hero-container "
         id="hero-container"
@@ -99,14 +99,18 @@ const Hero = () => {
         <div className="skincare-wrap">
        
           <div className="left-row" ref={leftColumnRef}>
-            {leftChunk.map(({ url, description }, index) => (
+            {leftChunk.map(({ url, description, price }, index) => (
               <Products
                 key={url}
                 url={url}
                 description={description}
+                price={price}
                 index={index}
+
               />
+
             ))}
+
           </div>
           <div className="middle-row" data-scroll data-scroll-speed="-20">
             <div ref={middleColumnRef}>
@@ -116,6 +120,8 @@ const Hero = () => {
                   url={url}
                   description={description}
                   index={index}
+               
+
                 />
               ))}
             </div>
@@ -127,6 +133,8 @@ const Hero = () => {
                 url={url}
                 description={description}
                 index={index}
+              
+
               />
             ))}
             

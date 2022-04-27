@@ -1,0 +1,72 @@
+.loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sticky{
+    position: sticky;
+    top: 0;
+  
+  }
+  
+  .single-item-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Syncopate', sans-serif;
+
+  
+    .product-slide{
+      height: 100vh;
+      // display: flex;
+      // flex-direction: row;
+      justify-content: center;
+      width: 60%;
+      padding-top: 200px;
+      margin: 0 auto;
+      .makeup-title2{
+        font-size: 3vw;
+        text-transform: uppercase; 
+        font-weight: 600;
+        color: white;
+      }
+      .make-up-desc2{
+        font-size: .8rem;
+        margin-top: 30px;
+        line-height: 3.5;
+        color: white;
+  
+      }
+    
+    }
+  
+    .item-img-right{
+      height: 100vh;
+      width: 50vw;
+      overflow: hidden;
+      position: sticky;
+      right: 0;
+      top: 0;
+  
+  
+   
+  
+      img{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        transform: scale (1.3);
+        position: absolute;
+        top: 0;
+  
+        &.as-primary{
+          opacity: 1;
+          transform: scale(1.1)
+        }
+  
+      }
+    }
+  }

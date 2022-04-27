@@ -30,6 +30,7 @@ function MakeupSection ()  {
        
     
  const [activeIndex,setActiveIndex] = useState(-1)
+ const [products, ] = useState([])
 //  const {x, y} = useMousePosition
  
 
@@ -56,24 +57,27 @@ function MakeupSection ()  {
     
     return (
         <>
+        
+   
+        
        
         <Fade bottom>
         <div className='about-img-container'>
-        
+      
         
         </div>
         </Fade>
-        
+
         <div className='about-wrapper '>
-
-
+        Best Seller
         <Fade bottom>
+
         <div className='about-list'>
         {titles}
   
         </div>
+
         </Fade>
-   
         <div className='image-list' >
             {images} 
         </div>
@@ -85,6 +89,7 @@ function MakeupSection ()  {
         </div>
 
         </div>
+
 
         </>
     );

@@ -2,6 +2,10 @@ import React from "react";
 // import Fade from 'react-reveal/Fade'
 import {Link} from 'react-router-dom'
 import { photos } from "../../utils/datas.js";
+import {Fade } from 'react-reveal'
+import { FaShoppingCart} from 'react-icons/fa'
+import { VscAccount} from 'react-icons/vsc'
+
 
 
 import "./frontpage.scss";
@@ -25,7 +29,7 @@ function FrontPage  () {
 
   return (
     <div className=''>
-      {/* <div className="head">
+      <div className="front-navbar">
         <Fade bottom>
         <Link to='/'>
         FENTYBEAUTY
@@ -34,22 +38,25 @@ function FrontPage  () {
           <Fade top>
 
         <div className='front-menu'>
-          <Link to='/about'>MAKEUP</Link>
-          <Link to='/hero'>SKINCARE</Link>
-          <Link to='/story'>ABOUT US</Link>
-          <Link to='/login'>LOGIN </Link>
-
+          <ul className='nav'>
+          <Link to='/about'>MAKEUP &nbsp;  </Link>
+          <Link to='/hero'>SKINCARE &nbsp; </Link>
+          <Link to='/story'>ABOUT US &nbsp; </Link>
+          <Link to='/login'><VscAccount/>&nbsp; &nbsp;</Link>
+          <Link to ='/cart'><FaShoppingCart/> </Link>
+          </ul>
         </div>
         </Fade>
-        </div> */}
+        </div>
       <div className="top-banner">
         <div className="top-banner-content">
-          {/* <Fade top> */}
+          <Fade top>
           <h1 className='text'>FENTY BEAUTY BY </h1> 
-          {/* </Fade>
-          <Fade bottom> */}
-           <span className='front-page-span'>RIHANNA yooo</span>
-           {/* </Fade> */}
+          </Fade>
+          <Fade bottom> 
+           <span className='front-page'>RIHANNA</span>
+
+           </Fade>
            <div>
            </div>
           <iframe

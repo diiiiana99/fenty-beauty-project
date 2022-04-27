@@ -1,0 +1,60 @@
+
+
+
+
+.rihanna-wrapper {
+    height: 112vh;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+
+  
+    position: relative;
+  
+    .rihanna-pic {
+      z-index: 3;
+      position: absolute;
+      max-height: 60%;
+      max-width: 30%;
+      object-fit: contain;
+  
+      top: 120%;
+      left: 31.5%;
+    }
+  
+  
+  
+    .text-parent {
+      position: absolute;
+      top: 43%;
+    
+
+  
+      &:first-of-type {
+        z-index: 1;
+      }
+  
+      &:last-of-type {
+        z-index: 3;
+      }
+      h1 {
+        color: white;
+        line-height: 140%;
+        font-size: 4.1vw;
+        white-space: nowrap;
+        font-family: 'Syncopate', sans-serif;
+
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        font-weight: bold;
+        &.outline {
+          -webkit-text-stroke: 2px white;
+          text-stroke: 1px white;
+          color: transparent;
+        }
+        &:last-of-type {
+          margin-left: -25%;
+        }
+      }
+    }
+  }

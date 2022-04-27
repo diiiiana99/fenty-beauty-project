@@ -51,8 +51,28 @@ const data = [
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },  {
       url:
-        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB_SPR_SUM22_T2PRODUCT_CONCRETE_SUN_STALK_R_PALETTE_OPEN_1200x1500_1_650x.jpg?v=1648163718",
-      title: "HIGHLIGHTER PALETTE",
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47137_bg.jpg?v=1649460700",
+      title: "EYE GEL-CREAM",
+      description:
+        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
+    },  
+    {
+      url:
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/29505.jpg?v=1614393286",
+      title: "EYE PRIMER",
+      description:
+        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
+    },
+    {
+      url:
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/FB70023_FB3020.jpg?v=1614391714",
+      title: "SNAP SHADOWS",
+      description:
+        "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
+    },  {
+      url:
+        "https://cdn.shopify.com/s/files/1/0341/3458/9485/products/47618_alt1_38260df4-5ea9-4f9b-b6f1-fc00dc58f2a9.jpg?v=1623189828",
+      title: "FENTY SKIN START’RS",
       description:
         "A product microsite to showcase the 1990 ferrari concept designed by the industrial designer George.",
     },  

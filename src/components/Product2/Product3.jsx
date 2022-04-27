@@ -1,9 +1,8 @@
 import React, {useRef, useEffect} from 'react'
 import useOnScreen from '../../hooks/useOnScreen'
-import './ProductDetail.scss'
-import Fade from 'react-reveal'
+import './Product2.scss'
 
-export default function SingleProductItem ({ product, index, updateImage }) {
+export default function Product3 ({ title, description, index, updateImage }) {
 
     const ref=useRef(null);
     const onScreen = useOnScreen(ref);
@@ -16,16 +15,17 @@ export default function SingleProductItem ({ product, index, updateImage }) {
     }, [onScreen, index])
  
   return (
-    <Fade bottom>
     <div ref={ref} className='product-slide'>
       <h3 className='makeup-title2'>
-        {product.title}
+        {title}
       </h3>
+
       <p className='make-up-desc2'>
-        {product.description}
+        {description}
       </p>
-      <button>Add To Cart</button>
+      <div>        <button className='skincare-button'>Add to Cart</button>
+</div>
+
     </div>
-    </Fade>
   )
 }
