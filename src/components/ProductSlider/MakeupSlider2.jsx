@@ -19,6 +19,8 @@ const clamp = (value, lower, upper) => {
 };
 
 export default function MakeupSlider2 ()  {
+  const url = process.env.REACT_APP_URL
+
 
   
   
@@ -27,7 +29,7 @@ export default function MakeupSlider2 ()  {
 
 
   useEffect( () => {
-    fetch("http://localhost:3000/products")
+    fetch(url + `/products`)
     .then(r => {
       if (r.ok) {
         r.json().then(data => {
@@ -164,6 +166,4 @@ console.log(products)
     
   );
 };
-
-
 

@@ -14,7 +14,7 @@ import FrontPage from './components/FrontPage/FrontPage';
 import './App.scss'
 import Login from './components/Login/Login';
 import Main from './components/Services/Main';
-import MakeupSlider from './components/ProductSlider/MakeupSlider';
+import MakeupSlider from './components/ProductSlider/MakeupSlider2';
 import MakeupSlider2 from './components/ProductSlider/MakeupSlider2';
 import MakeupSlider3 from './components/ProductSlider/MakeupSlider3';
 import MakeupSlider4 from './components/ProductSlider/MakeupSlider4';
@@ -22,9 +22,6 @@ import MakeupSlider4 from './components/ProductSlider/MakeupSlider4';
 
 import Navbar from './components/Navbar/Navbar'
 import Models from './components/Models/ModelsCarousel';
-import Product2 from './components/Product2/Product2'
-import Product4 from './components/ModelDetails/Product5'
-
 import ProductDetail from './components/ProductDetail/ProductDetail'
 import Rihanna from './components/Rihanna/Rihanna';
 import RihannaAboutSection from './components/Rihanna/RihannaAboutSection';
@@ -36,6 +33,9 @@ import axios from 'axios'
 
 function App() {
     let history = useHistory();
+
+    const url = process.env.REACT_APP_URL
+
 
 
     const [signUpUsername, setSignUpUsername] = useState("");
@@ -69,21 +69,10 @@ function App() {
   
     // },[])
   
-    function handleLogOut(){
-      axios.delete('/logout')
-      .then(r=>{
-        setSignedIn(false);
-        setUser(null);
-        history.push('/')
-      })
-      .catch(function(error){
-        if (error.response){
-          console.log(error.response.data.errors)
-        }
-      })
-    }
+
   
     function handleSignUpSubmit(e) {
+
       e.preventDefault();
       const signUpDetails = {
 
@@ -92,7 +81,7 @@ function App() {
         password: signUpPassword,
         password_confirmation: signUpPasswordConfirmation
       }
-      axios.post("http://127.0.0.1:3000/signup", signUpDetails)
+      axios.post(url + `/signup`, signUpDetails)
         .then(r=>{
             console.log(r)
             setSignedIn(true)
@@ -117,9 +106,9 @@ function App() {
         email,
         password
       }
-      
+
   
-      axios.post("http://127.0.0.1:3000/login", logInDetails)
+      axios.post(url + `/login`, logInDetails)
       .then((r)=>{
         console.log(r)
         // console.log(r)
@@ -180,7 +169,6 @@ function App() {
         signUpPasswordConfirmation={signUpPasswordConfirmation}
         setSignUpPasswordConfirmation={setSignUpPasswordConfirmation}
         handleSignUpSubmit={handleSignUpSubmit}
-         handleLogOut={handleLogOut}
         />
     </Route>
     <Route exact path='/story'>
@@ -198,11 +186,9 @@ function App() {
     <Cart/>
     </Route>
     <Route exact path='/prod'>
-    <Product2/>
 
     </Route>
     <Route exact path='/singleproduct5'>
-    <Product4/>
 
     </Route>
     </Switch>

@@ -21,10 +21,12 @@ export default function MakeupSlider4 ()  {
   
   const[loader, setLoader] = useState(true);
   const [products, setProducts] = useState([])
+  const url = process.env.REACT_APP_URL
+
 
 
   useEffect( () => {
-    fetch("http://localhost:3000/products")
+    fetch(url + `/products`)
     .then(r => {
       if (r.ok) {
         r.json().then(data => {
@@ -157,4 +159,3 @@ export default function MakeupSlider4 ()  {
     
   );
 };
-
