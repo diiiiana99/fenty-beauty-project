@@ -12,6 +12,7 @@ E-commerce full-stack application that consists:
 
 # Demos:
 
+# <img src='https://r.lvmh-static.com/uploads/2017/09/21427257_1616245731759377_453079733919700565_o-1584x872.png' width='500'>
 
 
 #
