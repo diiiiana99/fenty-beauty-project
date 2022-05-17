@@ -1,18 +1,18 @@
 
-# <img src='title-large.png' width='500'>
+# <img src='https://r.lvmh-static.com/uploads/2017/09/21427257_1616245731759377_453079733919700565_o-1584x872.png' width='500'>
 
 E-commerce full-stack application that consists:
-     – Infrastructured with 2 languages for both ends, utilizing 4 frameworks of React and CSS.
-     – Managed 6 functional components and operations. Was responsible for the full development cycle of the product. 
-     – Executed commands and collaborated with project manager regarding MVC, diagrams, and achieving the goal of the day.
+* Infrastructured with 2 languages for both ends, utilizing 4 frameworks of React and CSS.
+* Managed 6 functional components and operations. Was responsible for the full development cycle of the product. 
+* Executed commands and collaborated with project manager regarding MVC, diagrams, and achieving the goal of the day.
 
 
 
-**APP**: https://ghostd-app.herokuapp.com/
+**APP**: https://vimeo.com/707940460
 
 # Demos:
 
-Full Youtube Demo - https://www.youtube.com/watch?v=Ku769gWmZH8
+Full Youtube Demo - https://vimeo.com/707940460
 
 <img src='ghostd-demo.gif' width='750'>
 
@@ -20,10 +20,10 @@ Full Youtube Demo - https://www.youtube.com/watch?v=Ku769gWmZH8
 ## Technical Accomplishments
 
 When the app starts, I can see all products.
-I can "add" my products to the cart
-I can login to my profile from the page by clicking the login button. This change should be persisted in the backend.
-I can swipe through all products.
-I can see products details that is being fetched by its id via useParams 
+* I can "add" my products to the cart
+* I can login to my profile from the page by clicking the login button. This change should be persisted in the backend.
+* I can swipe through all products.
+* I can see products details that is being fetched by its id via useParams 
 
 **Made With:** 
 
