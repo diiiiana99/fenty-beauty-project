@@ -13,7 +13,7 @@ E-commerce full-stack application that consists:
 # Demos:
 
 
-<video src='https://vimeo.com/707940460' width='750'>
+<video src='' width='750'>
 
 #
 ## Technical Accomplishments
