@@ -12,14 +12,15 @@ E-commerce full-stack application that consists:
 
 # Demos:
 
-Full Youtube Demo - https://vimeo.com/707940460
+Full Youtube Demo - 
+<div style="padding:50.06% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/707940460?h=bb72036ae0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Fenty Beauty.mov"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 <img src='ghostd-demo.gif' width='750'>
 
 #
 ## Technical Accomplishments
 
-When the app starts, I can see all products.
+* When the app starts, I can see all products.
 * I can "add" my products to the cart
 * I can login to my profile from the page by clicking the login button. This change should be persisted in the backend.
 * I can swipe through all products.
